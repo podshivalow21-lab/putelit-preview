@@ -61,29 +61,28 @@
   }
   .wordmark {
     display: inline-flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 8px;
-    font-family: var(--font-brand);
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: -0.02em;
+    align-items: center;
+    gap: 0;
     color: var(--text);
     text-decoration: none;
     flex-shrink: 0;
     line-height: 1;
   }
   .wordmark:hover { color: var(--text); }
+  .logo-wordmark--d {
+    height: 48px;
+    width: auto;
+    max-width: min(220px, 48vw);
+    object-fit: contain;
+    display: block;
+  }
   .wordmark-name {
     font-family: var(--font-brand);
     font-weight: 600;
     font-size: 15px;
     letter-spacing: -0.03em;
-    text-transform: none;
     line-height: 1;
     white-space: nowrap;
-    padding-bottom: 1px;
   }
   .wordmark-name::first-letter {
     color: var(--accent);
@@ -1144,9 +1143,7 @@
   .nav-actions { flex-shrink: 0; gap: 6px; }
   .nav-actions .btn-ghost { display: none; }
   .nav-actions .btn { padding: 8px 12px; font-size: 12px; }
-  .wordmark { flex-direction: row; align-items: flex-end; gap: 6px; font-size: 13px; flex-shrink: 0; }
-  .wordmark .logo-mark { width: 32px; height: 32px; }
-  .wordmark-name { font-size: 13px; }
+  .logo-wordmark--d { height: 40px; max-width: min(180px, 46vw); }
   .logo-wordmark { height: 28px; max-width: min(160px, 38vw); }
   .contact-grid { grid-template-columns: 1fr; }
   .quiz-box { padding: 24px 18px; }
