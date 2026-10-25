@@ -61,25 +61,35 @@
   }
   .wordmark {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 2px;
     font-family: var(--font-brand);
     font-weight: 600;
-    font-size: 17px;
-    letter-spacing: -0.03em;
+    font-size: 11px;
+    letter-spacing: -0.02em;
     color: var(--text);
     text-decoration: none;
     flex-shrink: 0;
+    line-height: 1;
   }
   .wordmark:hover { color: var(--text); }
   .wordmark-name {
     font-family: var(--font-brand);
     font-weight: 600;
-    letter-spacing: -0.03em;
-    line-height: 1;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    line-height: 1.1;
+    white-space: nowrap;
   }
   .wordmark-name::first-letter {
     color: var(--accent);
+  }
+  .wordmark .logo-mark {
+    width: 36px;
+    height: 36px;
   }
 
   .logo-mark {
@@ -1133,8 +1143,9 @@
   .nav-actions { flex-shrink: 0; gap: 6px; }
   .nav-actions .btn-ghost { display: none; }
   .nav-actions .btn { padding: 8px 12px; font-size: 12px; }
-  .wordmark { gap: 8px; font-size: 13px; flex-shrink: 0; }
-  .logo-mark { width: 28px; height: 28px; }
+  .wordmark { gap: 2px; font-size: 10px; flex-shrink: 0; }
+  .wordmark .logo-mark { width: 30px; height: 30px; }
+  .wordmark-name { font-size: 10px; }
   .logo-wordmark { height: 28px; max-width: min(160px, 38vw); }
   .contact-grid { grid-template-columns: 1fr; }
   .quiz-box { padding: 24px 18px; }
