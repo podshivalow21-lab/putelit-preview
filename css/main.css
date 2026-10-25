@@ -1,7 +1,7 @@
 :root {
-    --bg: #17120C;
-    --surface: #1E1810;
-    --surface-2: #261C10;
+    --bg: #1A110C;
+    --surface: #22160F;
+    --surface-2: #2A1B12;
     --border: #3A2E1A;
     --border-strong: #5C4A20;
     --text: #F1E6CF;
@@ -46,7 +46,7 @@
     position: sticky;
     top: 0;
     z-index: 40;
-    background: rgba(23,18,12,.92);
+    background: rgba(26,17,12,.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
