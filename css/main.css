@@ -1124,6 +1124,7 @@
   .nav-actions .btn { padding: 8px 12px; font-size: 12px; }
   .wordmark { gap: 8px; font-size: 13px; flex-shrink: 0; }
   .logo-mark { width: 28px; height: 28px; }
+  .logo-wordmark { height: 28px; max-width: min(160px, 38vw); }
   .contact-grid { grid-template-columns: 1fr; }
   .quiz-box { padding: 24px 18px; }
 }
